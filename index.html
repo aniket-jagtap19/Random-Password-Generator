@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>project</title>
+  <title>Cricket Match - Bat Ball Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>RANDOM COLOR GENEERATOR </h2>
+    <div class="container">
+        <h2>Random Password Generator</h2>
+        <h3>Choose your options below:</h3>
 
-    <div id="div" >
-        <h4 id="h4" ></h4>
+        <div class="options">
+            <label for="ucase"><input id="ucase" type="checkbox"> Uppercase</label>
+            <label for="lcase"><input id="lcase" type="checkbox"> Lowercase</label>
+            <label for="ncase"><input id="ncase" type="checkbox"> Numbers</label>
+            <label for="scase"><input id="scase" type="checkbox"> Symbols</label>
+        </div>
+
+        <div>
+            <label for="lencase">Select Length</label>
+            <input id="lencase" value="1" min="1" type="number">
+        </div>
+
+        <button id="button" onclick="genfun()">Generate!</button>
+
+        <div id="result"></div>
     </div>
-  <button id="button1" onclick="clickme()" >
-    GENERATE !! 
-</button>
 
   <script src="script.js">
   </script>
